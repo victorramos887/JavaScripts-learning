@@ -11,12 +11,36 @@
         color: white;
         font: nomal 18pt Arial;
         }
+        div {
+            background-color: bisque;
+            width: 125px;
+            height: 25px;
+            top: auto;
+            position:center;
+
+        }
     </style>
 </head>
 <body>
     
-    <h1>Iniciando estudos <strong>DOM</strong> em JavaScript</h1>
+    <p>Iniciando estudos <strong>DOM</strong> em JavaScript</p>
     <p>Aqui vai o resultado</p>
-    <div>Cliqui em mim</div>
+    <div id = 'msg'>Cliqui em mim</div>
+    <p>Análisando</p>
+    <p>Victor</p>
 </body>
+<script>
+    // window.document.write(window.document.characterSet)
+    // window.document.write(window.navigator.appName)
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var corpo = window.document.body
+    window.document.write('Está escrito assim ' + p1.innerText)
+    p1.style.color = 'red'
+    corpo.style.background = 'yellow'
+    var d = window.document.getElementById('msg')
+    //d.style.background = 'green'
+
+    var c = window.document.querySelector('div#msg')
+    c.style.background = 'blue'
+</script>
 </html>
