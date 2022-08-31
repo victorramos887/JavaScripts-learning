@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+    <div class = 'calculadora' id = 'calculadora'>
+
+        <div id = 'caixa_de_input'>
+
+            <input type="text" class="input_valores" placeholder="numero + numero">
+
+        </div>
+
+        <!-- OPERADORES -->
+        <div class = 'operadores_caixa'>
+            <div><input type="button" value = '+' id = 'soma' class = 'operadores'></div>
+            <div><input type="button" value = '-' id = 'subtração' class = 'operadores'></div>
+            <div><input type="button" value = '*' id = 'multiplicacao' class = 'operadores'></div>
+            <div><input type="button" value = '/' id = 'divisão' class = 'operadores'></div>
+        </div>
+
+        <div>
+            <input type="button" value = '=' id = 'igual' class = 'igual'>
+        </div>
+
+    </div>
+
+    <div id = 'testes_de_resultados'>Resultado</div>
+
+    <!-- FUNÇÕES EM JAVASCRIPT -->
+    <script type="text/javascript" src="./calculadora.js"></script>
+</body>
+</html>

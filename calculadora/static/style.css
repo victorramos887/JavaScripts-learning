@@ -1,0 +1,91 @@
+div#calculadora
+{
+    width: 550px;
+    height: 500px;
+    border: solid;
+    border-radius: 10px;
+    border-color:  black;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+div#caixa_de_input
+{
+    margin-top: 5 auto;
+    width: 500px;
+    height: 50px;
+    /* border: solid; */
+    /* border-color: rgb(146, 146, 146); */
+    border-radius: 10px;
+    margin:5px auto;
+}
+
+div.operadores_caixa
+{
+    width: 100px;
+    height: 300px;
+    border:solid;
+    margin: 5px auto;
+    margin-left: 77%;
+    border-color: rgb(146, 146, 146);
+    border-radius:10px;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#soma, #subtração, #multiplicacao, #divisão{
+    /* background-color:  #E3E1B8; */
+    border-color: #00000000;
+    border-radius: 4px; 
+    font-size: 27pt;
+    margin: 7px;
+    width: 50px;
+    height:50px;
+    border-radius:50%;
+    margin-left: 25%;
+    margin-top: 15px;
+    color: black;
+}
+
+.igual
+{
+    margin-left: 77%;
+    width: 105px;
+    height: 120px;
+    border-radius: 5%;
+    border: solid;
+    font-size: 27pt;
+    border-color:rgb(200, 202, 203);
+}
+
+input[type=button]:hover
+{
+    color: rgb(0, 0, 0);
+    border-color:rgb(136, 131, 139);
+    background-color: rgb(136, 131, 139);
+}
+
+input[type=button]:active
+{
+    background-color: rgba(192, 108, 82, 0.51);
+    color: rgb(12, 12, 12);
+    border-color:background-color: rgb(136, 131, 139);;
+}
+
+
+
+
+
+.input_valores
+{
+    margin: 5px auto;
+    margin-left: 0vh;
+    border-collapse:collapse;
+    border-color:white;
+    border-radius: 0%;
+    border-color: rgb(158, 158, 158);
+    width: 500px;
+    height: 40px;
+    font-size: 20pt;
+}

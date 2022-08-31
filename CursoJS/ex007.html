@@ -5,16 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Numeros</title>
+    <style>
+
+        div#resultado {
+            width: 100px;
+            height: 80px;
+            border: solid;
+            border-color: black;
+            margin-top: 20pt;
+            text-align: center;
+            line-height: 75px;
+        }
+
+    </style>
 </head>
 <body>
 
     <h1>Somando Valores</h1>
     <input type="number" name = 'txtn1' id = 'txtn1'>
     <input type="number" name = 'txtn2' id = 'txtn2'>
-    <input type="button" value = 'somar' id = 'button_somar'>
+    <input type="button" value = '=' id = 'button_somar'>
+    <div id = 'resultado'>
+
+        Resultado
+
+    </div>
     
 
     <script>
+
         var button_somar = window.document.getElementById('button_somar')
         button_somar.addEventListener('click', somar)
 
@@ -24,10 +43,12 @@
             var Tnumero2 = window.document.getElementById('txtn2')
 
             var n1 = Number(Tnumero1.value)
-            var n2 = Number(Tnumber2.value)
+            var n2 = Number(Tnumero2.value)
 
-            window.alert(n1)
+            var resultado = window.document.getElementById('resultado')
+            var somatoria = n1 + n2
 
+            resultado.innerHTML = `${somatoria}`
         }
 
     </script>
