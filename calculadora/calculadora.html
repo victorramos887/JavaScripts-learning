@@ -8,32 +8,72 @@
     <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
-
-    <div class = 'calculadora' id = 'calculadora'>
-
-        <div id = 'caixa_de_input'>
-
-            <input type="text" class="input_valores" placeholder="numero + numero">
-
-        </div>
-
-        <!-- OPERADORES -->
-        <div class = 'operadores_caixa'>
-            <div><input type="button" value = '+' id = 'soma' class = 'operadores'></div>
-            <div><input type="button" value = '-' id = 'subtração' class = 'operadores'></div>
-            <div><input type="button" value = '*' id = 'multiplicacao' class = 'operadores'></div>
-            <div><input type="button" value = '/' id = 'divisão' class = 'operadores'></div>
-        </div>
+    
+    <div class = "container">
 
         <div>
-            <input type="button" value = '=' id = 'igual' class = 'igual'>
+            <input type="text" class = "input__textMain" id = "input__textMain">
+        </div>
+
+        <div class = "operadores" id = "operadores">
+            
+            <!-- BOTÃO SOMA -->
+            <button type = "button" class = "button" id = "button_somar">
+
+                <span class = "button__icon">
+                    <ion-icon name="add-outline"></ion-icon>
+                </span>
+
+            </button>
+
+            <!-- BOTÃO SUBTRAIR -->
+            <button type = "button" class = "button" id = "button_subtrair">
+
+                <span class = "button__icon">
+                    <ion-icon name="remove-outline"></ion-icon>
+                </span>
+
+            </button>
+
+            <!-- BOTÃO MULTIPLICAR -->
+            <button type = "button" class = "button" id = "button_multiplicacao">
+
+                <span class = "button__icon">
+                    <ion-icon name="close-outline"></ion-icon>
+                </span>
+
+            </button>
+
+            <button type = "button" class = "button" id = "button_dividir">
+
+                <span class = "button__icon" id = "button_dividir">
+
+                    &#247;
+
+                </span>
+
+            </button>
+
+            <button type = "button" class = "button" id = "button_equal">
+
+                <span class = "button__icon" id = "button_equal">
+                    <ion-icon name="reorder-two-outline"></ion-icon>
+                </span>
+
+            </button>
+
+        </div>
+
+        <div class = "resultados" id = "resultados">
+            Resultado
         </div>
 
     </div>
 
-    <div id = 'testes_de_resultados'>Resultado</div>
-
-    <!-- FUNÇÕES EM JAVASCRIPT -->
-    <script type="text/javascript" src="./calculadora.js"></script>
+    <!-- SCRIPTS E FUNÇÕES -->
+    <script type = "text/javascript" src = "calculadora.js"></script>
+    <!-- ESTILOS DE BOTÃO -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

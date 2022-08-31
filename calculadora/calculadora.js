@@ -1,34 +1,18 @@
-// let igual = window.document.getElementById('igual')
-// let resultados_testes = window.document.getElementById('testes_de_resultados')
-// igual.addEventListener('click', somar)
+// ----------------------- VARIAVEIS HTML ----------------------
 
-// var operadores = ['+', '-', '*', '/']
+// let box_input = window.document.getElementById('input__textMain')
+// let soma = window.document.getElementById('button_somar')
+// let subtracao = window.document.getElementById('button_subtrair')
+// let multiplicacao = window.document.getElementById('button_multiplicacao')
+// let divisao = window.document.getElementById('button_dividir')
+let equal = window.document.getElementById("button_equal")
+let resultado = window.document.getElementById("resultados")
 
-// function somar() 
-// {
+// -------------------EVENTOS DE BOTÃO --------------------------
 
-//     var caixa_input = window.document.getElementsByClassName('input_valores')
-// var valores = caixa_input[0].value.splitMulti()
+equal.addEventListener('click', equaldade)
 
-//     resultados_testes.innerHTML = valores[0]
-// }
+function equaldade() {
 
-
-// }
-
-function splitMulti(str, spliters) {
-    let string_ = str[0]
-    console.log(spliters.length)
-    for (var i = 0; i < spliters.length; i++) {
-
-        for(x in spliters) {
-            console.log(x)   
-        }
-
-    }
-
+    resultado.innerHTML = "---"
 }
-
-console.log('Não foi enviado')
-var operadores = ['+', '-', '*', '/']
-console.log(splitMulti('2+5+8+5-6', spliters = operadores))
