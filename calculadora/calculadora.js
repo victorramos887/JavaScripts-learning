@@ -1,6 +1,6 @@
 // ----------------------- VARIAVEIS HTML ----------------------
 
-// let box_input = window.document.getElementById('input__textMain')
+let box_input = window.document.getElementById('input__textMain')
 // let soma = window.document.getElementById('button_somar')
 // let subtracao = window.document.getElementById('button_subtrair')
 // let multiplicacao = window.document.getElementById('button_multiplicacao')
@@ -14,5 +14,5 @@ equal.addEventListener('click', equaldade)
 
 function equaldade() {
 
-    resultado.innerHTML = "---"
+    resultado.innerHTML = box_input.value
 }
