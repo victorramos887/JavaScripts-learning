@@ -14,5 +14,25 @@ equal.addEventListener('click', equaldade)
 
 function equaldade() {
 
-    resultado.innerHTML = box_input.value
+    var valor_digitado = separador(String(box_input.value))
+
+    resultado.innerHTML = valor_digitado.numeros
+    console.log(valor_digitado.caracteres)
+
+}
+
+function separador(lista_split) {
+
+    // var sep = ['~', '-', '+', '*'];
+
+    var number = lista_split.split(/[/+*-]+/);
+    
+    for(i = 0; i < length(lista_split); i++) {
+        var caracteres = lista_split.charAt(i)
+
+        if caracteres;
+    }
+
+    return {"numeros":number,"caracteres":caracteres};
+
 }
