@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>identificador de Idade</title>
+    <link rel="stylesheet" href=".\style\style.css">
+    <link rel="stylesheet" href=".\style\reset.css">
 </head>
 <body>
     
@@ -12,15 +14,48 @@
         <h1>Idade</h1>
     </header>
 
-    <section>
-        <div></div>
-        <div></div>
-    </section>
+    <div id="exercicio">
 
-    <footer>
-        <p>&copy; Curso em Video</p>
-    </footer>
+        <section>
+            
+            <div class="exercicio__img" id="exercicio__img"></div>
 
+            <div class="exercicio__info" id="exercicio__info">
+
+                <label>Sexo:</label>
+                <input type="radio" id="r-masculino" name="sexo" value="Masculino">
+                <label>Masculino</label>
+                <input type="radio" id="r-feminina" name="sexo" value="Feminina">
+                <label>Feminino</label>
+                <br>
+
+            </div>
+
+            <div class="exercicio__date" id="exercicio__date">
+
+                <input type="date" id="date__nascimento">
+                <label>Data de nascimento</label>
+
+            </div>
+
+            <div class="exercicio__btn-input" id="exercicio__btn-input">
+
+                <button class="verificar" onclick="funcao()">Verificar</button>
+
+            </div>
+            <div id="debug"></div>
+
+        </section>
+
+        <footer>
+
+            <p>&copy; Curso em Video</p>
+
+        </footer>
+
+    </div>
+
+    <script src=".\scripts\script.js"></script>
 
 </body>
 </html>
