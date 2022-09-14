@@ -132,7 +132,7 @@ body::before {
 }
 @media screen and (min-width: 768px) {
   .profile-card__social a:hover {
-    tranform: scale(1.2) translateY(-5px);
+    transform: scale(1.2) translateY(-5px);
   }
 }
 .profile-card__social a.facebook {
@@ -148,9 +148,54 @@ body::before {
   box-shadow: 0 4px 30px rgba(43, 98, 168, 0.5);
 }
 .profile-card__social a.behance {
-  background: linear-gradient(45deg, #626161, #000000);
+  background: linear-gradient(45deg, #0037ff, #0e71c8);
   box-shadow: 0 4px 30px rgba(43, 98, 168, 0.5);
 }
 .profile-card__social a.github {
   background: linear-gradient(45deg, #626161, #000000);
+  box-shadow: 0 4px 30px rgba(43, 98, 168, 0.5);
+}
+.profile-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-widht: 576px) {
+  .profile-card__actions {
+    flex-direction: bold;
+    gap: 1.5rem;
+  }
+}
+.profile-card__actions > button {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 250px;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+@media screean and (max-width: 768px) {
+  .profile-card__actions > button {
+    min-width: 170px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .profile-card__actions > button:hover {
+    transform: translateY(-5px);
+  }
+}
+.profile-card__actions > button.blue {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+.profile-card__actions > button.orange {
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+.profile-card__actions > button.orange.hover {
+  box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
 }/*# sourceMappingURL=style.css.map */
