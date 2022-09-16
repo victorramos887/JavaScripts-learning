@@ -1,0 +1,22 @@
+body {
+  background: rgb(146, 145, 145);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card {
+  width: 428px;
+  height: 269.9px;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 1.5px rgb(64, 64, 64);
+}
+
+.wifi-chip {
+  text-align: row;
+}
+.wifi-chipwifi {
+  transform: rotate(190deg);
+}/*# sourceMappingURL=style.css.map */
