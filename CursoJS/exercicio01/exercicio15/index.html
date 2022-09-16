@@ -4,46 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>identificador de Idade</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href=".\style\style.css">
-    <link rel="stylesheet" href=".\style\reset.css">
+    <!-- <link rel="stylesheet" href=".\style\reset.css"> -->
 </head>
 <body>
     
     <header>
-        <h1>Idade</h1>
+        <h1>Verificador de idade</h1>
     </header>
 
     <div id="exercicio">
 
         <section>
             
-            <div class="exercicio__img" id="exercicio__img"></div>
+            <div>
 
-            <div class="exercicio__info" id="exercicio__info">
+                <p>Ano de Nascimento
+                    <input type="number" name="textyear" id="txtyear" min="0">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" id="btn-verificar" onclick="verificar()">
+                </p>
 
-                <label>Sexo:</label>
-                <input type="radio" id="r-masculino" name="sexo" value="Masculino">
-                <label>Masculino</label>
-                <input type="radio" id="r-feminina" name="sexo" value="Feminina">
-                <label>Feminino</label>
-                <br>
-
-            </div>
-
-            <div class="exercicio__date" id="exercicio__date">
-
-                <input type="date" id="date__nascimento">
-                <label>Data de nascimento</label>
 
             </div>
 
-            <div class="exercicio__btn-input" id="exercicio__btn-input">
-
-                <button class="verificar" onclick="funcao()">Verificar</button>
-
+            <div class="resultado" id="resultado">
+                <p>
+                    Preencha os dados a cima para verificar resultado
+                </p>
             </div>
-            <div id="debug"></div>
 
         </section>
 
