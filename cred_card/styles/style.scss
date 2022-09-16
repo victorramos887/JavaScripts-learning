@@ -20,11 +20,20 @@ body {
 
 .wifi-chip {
     
-    text-align: row;
-
-    &wifi{
-        transform: rotate(190deg);
-    }
+    display: flex;
+    flex-direction:row;
+    margin-top: 5rem;
     
 }
 
+.wifi{
+    transform: rotate(90deg) scale(2.5);
+    display: flex;
+    margin-right: 50px;
+
+}
+
+.chip-img {
+    display: flex;
+    height: 65px;
+}
