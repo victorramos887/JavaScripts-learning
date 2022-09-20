@@ -61,7 +61,7 @@ body::before {
   height: 200px;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
   display: block;
 }
