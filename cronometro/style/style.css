@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(196, 196, 196);
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+.container {
+  width: 25%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.time__ {
+  background-color: aqua;
+  width: 250px;
+  height: 150px;
+  position: relative;
+  padding: auto;
+  display: flex;
+  justify-items: center;
+}
+
+button {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+}
+
+.resetar {
+  top: 125px;
+  left: 150px;
+}
+
+.iniciar {
+  top: 125px;
+  left: 200px;
+}/*# sourceMappingURL=style.css.map */
