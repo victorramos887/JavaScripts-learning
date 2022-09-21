@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 005</title>
+</head>
+<body>
+    <h1>Antecesor e sucessor</h1>
+
+    <div>
+        <input type="text" name="text-number" id="text-number">
+        <input type="button" id="run" value="Antessor e Sucessor" onclick="antecessor_e_sucessor()">
+    </div>
+    <div id="resposta">
+    </div>
+
+    <script>
+
+        function antecessor_e_sucessor() {
+
+            var numero = window.document.getElementById("text-number").value
+            var resposta = window.document.getElementById("resposta")
+
+            var antecessor = Number(numero) - 1
+            var sucessor = Number(numero) + 1
+
+            resposta.innerHTML = `O Sucessor de ${numero} é o ${sucessor} Antecessor é o ${antecessor}` 
+
+        }
+
+
+    </script>
+</body>
+</html>
