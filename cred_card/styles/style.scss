@@ -9,14 +9,12 @@ body {
 
 .card{
 
-    width: 42.8mm;
-    height: 26.99mm;
+    width: 428px;
+    height: 269.9px;
     background-color: rgb(231, 229, 229);
-    padding: 1rem;
+    padding: 5rem;
     border-radius: 10px;
     box-shadow: 0 5px 10px 1.5px rgb(64, 64, 64);
-    flex-direction:column;
-    display: flex;
     
 }
 
@@ -24,29 +22,25 @@ body {
     
     display: flex;
     flex-direction:row;
-    padding: 1em;
-    margin-top:-85px;
-    margin-left: -150px;
- 
+    margin-top: 5rem;
+    
 }
 
 .wifi{
-    transform: rotate(90deg) scale(1.2);
+    transform: rotate(90deg) scale(2.5);
     display: flex;
-    margin-left: -260px;
+    margin-right: 50px;
+
 }
 
 .chip-img {
     display: flex;
-    // height: 50px;
-    transform: scale(0.11);
+    height: 65px;
 }
 
 .mastercard {
 
-    // margin-top:-45px;
-    width: 35px;
-    margin-top: -200px;
-    margin-left: 67px;
-    
+    margin-top:-45px;
+    width: 100px;
+    margin-left: 175px;
 }
