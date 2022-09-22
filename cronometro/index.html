@@ -6,18 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
     <link rel="stylesheet" href=".\style\style.css">
+    <link rel="stylesheet" href=".\style\reset.css">
 </head>
 <body>
+
+    <h1>Cronômetro</h1>
     <div class="container" id="container">
 
-        <h1>Cronômetro</h1>
+        
 
         <div class="time__">
-            <div class="time__minutos" id="time__minutos"></div>
-            <div class="time__segundos" id="time__segundos"></div>
 
-            <button class="resetar" id="resetar"></button>
-            <button class="iniciar" id="iniciar"></button>
+            <span class="time__hora" id="time__hora">00</span> :
+            <span class="time__minutos" id="time__minutos">00</span> :
+            <span class="time__segundos" id="time__segundos">000</span>
+
+        </div>
+
+        <div class="time__button" id="time__button">
+            <button class="resetar" id="resetar">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                 </svg>
+            </button>
+            <button class="iniciar" id="iniciar" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M7 4v16l13 -8z"></path>
+                </svg>
+            </button>
         </div>
     </div>
 </body>

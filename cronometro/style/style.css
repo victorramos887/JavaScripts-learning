@@ -3,38 +3,52 @@ body {
   align-items: center;
   justify-items: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
 }
 
 .container {
-  width: 25%;
-  margin: auto;
+  background-color: white;
+  width: 50%;
+  height: 40%;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 15px rgb(174, 173, 173);
   display: flex;
   align-items: center;
-  text-align: center;
+  padding: 2em 1em;
+  flex-direction: column;
+  margin: 20px;
+  position: inherit;
+}
+
+h1 {
+  font-size: 28pt;
 }
 
 .time__ {
-  background-color: aqua;
-  width: 250px;
-  height: 150px;
   position: relative;
-  padding: auto;
-  display: flex;
-  justify-items: center;
+  display:inline-block;
+  margin-bottom: 15pt;
+  font-size: 21pt;
 }
 
 button {
-  width: 40px;
-  height: 20px;
-  position: absolute;
+  margin: 7pt;
+  background-color: rgb(180, 177, 173);
+  width: 50px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
-.resetar {
-  top: 125px;
-  left: 150px;
+button svg{
+  display: flex;
+  margin-left: 12.5px;
 }
 
-.iniciar {
-  top: 125px;
-  left: 200px;
-}/*# sourceMappingURL=style.css.map */
+button:active {
+  background-color: rgb(234, 234, 234);
+  color: blue;
+  box-shadow: 0 0px 0px 0px rgb(102, 102, 102);
+}
