@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(157, 156, 156);
+    position: relative;
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto;  */
+}
+
+.tela {
+    background-color: white;
+    width: 65px;
+    height: 150px;
+    padding: 2em 1em;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
