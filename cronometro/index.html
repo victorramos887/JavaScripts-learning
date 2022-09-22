@@ -19,24 +19,38 @@
 
             <span class="time__hora" id="time__hora">00</span> :
             <span class="time__minutos" id="time__minutos">00</span> :
-            <span class="time__segundos" id="time__segundos">000</span>
+            <span class="time__segundos" id="time__segundos">00</span> :
+            <span class="time__milisegundos" id="time__milisegundos">000</span>
 
         </div>
 
         <div class="time__button" id="time__button">
-            <button class="resetar" id="resetar">
+
+            <button type="button" class="resetar" id="resetar">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                  </svg>
             </button>
-            <button class="iniciar" id="iniciar" >
+
+            <button type="button" class="pause" id="pause">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+                    <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+                 </svg>
+            </button>
+
+            <button type="button" class="iniciar" id="iniciar" onclick="debug()">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M7 4v16l13 -8z"></path>
                 </svg>
             </button>
+
         </div>
     </div>
+    <div class="debug" div="debug"></div>
+    <script src="./script/script.css"></script>
 </body>
 </html>

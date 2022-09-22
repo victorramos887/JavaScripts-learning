@@ -47,6 +47,10 @@ button svg{
   margin-left: 12.5px;
 }
 
+button:hover {
+  color: red;
+}
+
 button:active {
   background-color: rgb(234, 234, 234);
   color: blue;
