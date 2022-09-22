@@ -31,17 +31,19 @@ section {
 input[type=number] {
     width: 80%;
     height: 50px;
-    font-size: 15pt;
-    margin-top: 15px;
+    font-size: 19pt;
+    margin-top: 10px;
+    justify-self: center;
 
 }
 label{
     margin-top: 15px;
+    font-size: 21pt;
 }
 
 input[type=button] {
 
-    margin-top:25px;
+    margin-top:15px;
     width: 75px;
     height: 35px;
 
