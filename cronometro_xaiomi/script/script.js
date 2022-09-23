@@ -6,6 +6,9 @@ var smilisecond = window.document.getElementById('miliseconds');
 var ssecond = window.document.getElementById('seconds');
 var sminutes = window.document.getElementById('minutes');
 
+
+// SVG
+
 //SET DIV
 var sideTop = window.document.getElementById('side__top')
 
@@ -16,7 +19,7 @@ var controleButton = 1;
 
 // ATRIBUIR FUNÇÕES
 play.addEventListener("click", start);
-
+play.addEventListener('click', toggle_class('foo'))
 
 function start(){
     
@@ -43,16 +46,14 @@ function start(){
             sminutes.innerText = '00';
             pause();
             sideTop.innerHTML = ''
+            play.appendChild(svgPlay)
           })
 
         sideTop.appendChild(reset)
 
     } else {
-
         pause()
         controleButton = 1;
-        
-
     }
 };
 
