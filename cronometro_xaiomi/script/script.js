@@ -11,26 +11,43 @@ var sminutes = window.document.getElementById('minutes');
 
 //SET DIV
 var sideTop = window.document.getElementById('side__top')
-
 //BUTTON 
 var play = window.document.getElementById('play');
+
 var cron;
 var controleButton = 1;
 
 // ATRIBUIR FUNÇÕES
 play.addEventListener("click", start);
-play.addEventListener('click', toggle_class('foo'))
+//play.addEventListener('click', toggle_class('foo'))
 
 function start(){
     
     if( controleButton == 1 ) {
 
-        sideTop.innerHTML = ''
-        pause()
+        
+        pause(controleButton)
         cron = setInterval(() => {timer(); }, 10);
         controleButton = 0;
 
         // INSERINDO OUTRO BOTÃO
+
+        play.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>'
+        
+
+    } else {
+        pause(controleButton)
+        controleButton = 1;
+        play.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 4v16l13 -8z"></path></svg>'
+    }
+};
+
+function pause(controleButton) {
+
+    clearInterval(cron);
+    sideTop.innerHTML = ''
+    if(controleButton == 0){
+        
         var reset = window.document.createElement("button")
         reset.setAttribute('class', 'reset')
         reset.setAttribute('type', 'button')
@@ -46,19 +63,17 @@ function start(){
             sminutes.innerText = '00';
             pause();
             sideTop.innerHTML = ''
-            play.appendChild(svgPlay)
-          })
+        })
 
         sideTop.appendChild(reset)
-
     } else {
-        pause()
-        controleButton = 1;
-    }
-};
+        var btnAdd = window.document.createElement('button')
+        btnAdd.setAttribute('class', 'add')
+        btnAdd.setAttribute('type', 'button')
 
-function pause() {
-    clearInterval(cron);
+        sideTop.appendChild(btnAdd)
+    }
+    
 }
 
 function timer() {

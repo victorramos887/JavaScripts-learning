@@ -33,27 +33,34 @@ body {
 
 }
 
-.side_bottom {
+.side__bottom {
     position: absolute;
-    margin-top: 195%;
+    margin-top: 250pt;
+    
 }
 
-.side_bottom svg{
+.side__bottom button {
+
+    background-color: rgb(47, 130, 255);
+}
+.side__bottom svg{
 
     fill: white;
     color: white;
     margin-top: 2px;
 }
 
-/* .side_bottom:active {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect> </svg>');
+.side__top svg{
 
-} */
+    fill: white;
+    color: white;
+    margin-top: 2px;
+}
 
 button {
     width: 50px;
     height: 35px;
-    background-color: rgb(47, 130, 255);
+    background-color: rgba(240, 240, 240, 0.347);
     border-radius: 15px;
 }
 
@@ -63,3 +70,6 @@ button {
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="white" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>');
 }
 
+.add::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="white" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line> </svg>');
+}
