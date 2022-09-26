@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 .cursos {
@@ -14,6 +15,18 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+
 img {
     width: 100%;
+}
+
+a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.voltar {
+    border: 2px solid;
+    border-radius: 50%;
 }
