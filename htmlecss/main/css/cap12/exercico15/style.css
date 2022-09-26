@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(91, 164, 212);
+    font-family: Arial;
+    font-size: 20px;
+    margin: 20px;
+}
+h1 {
+    color: rgb(56, 56, 56);
+    background-color: lightblue;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    font-size: 15pt;
+    
+}
