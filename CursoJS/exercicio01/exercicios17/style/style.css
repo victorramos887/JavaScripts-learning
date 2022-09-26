@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 27pt;
+    color: white;
+}
+
+section {
+    background-color: white;
+    color: rgb(33, 30, 30);
+    display: grid;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    margin: 15px;
+    border-radius: 8%;
+    box-shadow: 0 -3px 14px 1px rgb(159, 157, 157);
+    grid-template-columns: 1fr;
+    grid-row: repeat(2,1fr);
+    padding-left: 2rem;
+}
+
+footer {
+    align-items: center;
+    color: white;
+}
