@@ -58,3 +58,7 @@ img {
     margin:10px;
 }
 
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
