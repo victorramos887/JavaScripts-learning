@@ -19,6 +19,20 @@ main
     margin: 10px;
 }
 
+article
+{
+    background-color:lightgray;
+    padding:5px;
+}
+
+article > aside
+{
+    background-color:rgb(165, 165, 165);
+    padding-left:5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 footer
 {
     background-color:black;
@@ -30,11 +44,11 @@ footer
 nav
 {
     background-color:gray;
-    padding:2px;
+    padding:3px;
     text-align: center;
 }
 
-nav > a 
+nav > a
 {
     text-decoration:none;
     color:white;
